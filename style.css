@@ -1,12 +1,34 @@
 *{
-    background-color: wheat;
     margin: 0;
     padding: 0;
 }
-header{
-    width: 100vw;
-    height: 200px;
-    background-color: ;
-    margin: 0;
-    border: solid 2px black;
+body{
+    background-color: #EEA47FFF;
+}
+.header{
+    background-color: #00539CFF;
+    padding: 10px;
+}
+.site-info{
+    background-color: #00539CFF;  
+}
+.display{
+
+}
+.quote{
+    background-color: #FC766AFF;
+}
+footer{
+    background-color: #EE4E34;
+    padding: 12px;
+}
+.interaction-piece{
+
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
