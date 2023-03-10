@@ -1,23 +1,3 @@
-@media and (max-width: 400px){
-    .wrapper{
-        min-height: 100%;
-    }
-    .header{
-        min-width: 100%;
-    }
-    .site-info{
-        min-width: 100%;
-    }
-    .img-1{
-        width: fit-content;
-        height: fit-content;
-    }
-    .display{
-        min-width: 100%;
-    }
-    .footer{min-width: 100%;}
-    
-}
 
 *,
 *::before,
@@ -47,6 +27,33 @@ ul{
 li{
     list-style-type: none;
 }
+.dropdown{
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+.dropdown:hover .contacts{
+    display: flex;
+    flex-direction: column;
+    background: rgb(44, 145, 233);
+    border-radius: 5px;
+    border: solid 2px;
+    padding: 20px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+}
+.contacts{
+    display: none;
+    padding: 10px;
+}
+.social{
+    background: #00539CFF;
+    width: 100%;
+    height: 15%;
+    padding: 5px;
+    text-align: center;
+    border: solid 1px;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -69,6 +76,7 @@ a{
     padding-right: 15%;
     max-height: 200px;
     color: palevioletred;
+    gap: 10px;
 }
 .site-info-text{
     text-align: left;
@@ -82,15 +90,22 @@ a{
     height: 40px;
     border-radius: 10px;
     background-color: lightcoral;
-    color: whitesmoke;
     border: 1px solid lightsalmon;
     color: black;
+}
+.site-info-text-button:hover{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: palevioletred;
+    border: 1px solid black;
+    color: #00539CFF;
 }
 .img-1{
     width: 150px;
     height: 170px;
     border-radius: 20px;
-    margin: 2px;
+    margin: 2px 10px 2px 2px;
 }
 .display{
     min-width: 100%;
@@ -113,6 +128,14 @@ a{
     width: 150px;
     height: 150px;
     border-radius: 20px;
+    cursor: pointer;
+}
+.card:hover{
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #FC766AFF;
+    border: solid 2px #EE4E34;
+    
 }
 .quote{
     background-color: #FC766AFF;
@@ -154,7 +177,12 @@ a{
     border: salmon solid 2px;
     border-radius: 12px;
 }
-
+#int-button:hover{
+    background-color: #EE4E34;
+    border: black solid 2px;
+    border-radius: 12px;
+    color: whitesmoke;
+}
 .footer{
     min-width: 100%;
     display: inherit;
