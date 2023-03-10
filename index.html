@@ -10,8 +10,10 @@
 </head>
 <body>
     <div class="header">
-        <h1>Portfolio Page</h1>
-        <p>by terNoKi</p>
+        <div>
+            <h1 class="logo">Portfolio Page</h1>
+            <p>by terNoKi</p>
+        </div>
         <ul>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
@@ -20,11 +22,14 @@
     </div>
     <div class="wrapper">
         <div class="site-info">
-            <h2>This is going to be my portfolio website.</h2>
-            <p>
+            <div class="site-info-text">   
+                <h2>This is going to be my portfolio website.</h2>
+                <p>
                 As you will see below this space will be filled with my future and present portfolio items and projects. I just recently begun coding and my adventure with webdev only begins. I hope it will be a bontiful one.
-            </p>
-            <img src="./images/laptop-for-info.webp">
+                </p>
+                <button class="site-info-text-button">Click here</button>
+            </div>
+            <img src="./images/laptop-for-info.webp" class="img-1">
         </div>
         <div class="display">
             <h2>Here lies the abbys</h2>
@@ -40,19 +45,22 @@
             <p>
                 I am going to give it my all in trying to learn all the ins and outs of webdev, HTML, CSS and JavaScript. I welcome you along for the ride if somehow you found this magnificent (haha) site.
             </p>
-            <p>~terNoKi</p>
+            <p id="signature">~terNoKi</p>
         </div>
         <div class="interaction-piece">
             <div class="int-textbox">
-                <h2>Hey here is a button</h2>
-                <p>Try and click it, who knows it may work?</p>
-                <button>?</button>
+                <div class="int-text">
+                    <h2>Hey here is a button</h2>
+                    <p>Try and click it, who knows it may work?</p>
+                </div>
+                <button id="int-button">?</button>
             </div>
         </div>
+
+        <div class="footer">
+            <p><strong>Copyright: <em>terNoKi</em> ©</strong></p>
+            <p>Special Thank you to <em><strong><a href="https://www.theodinproject.com/dashboard">The Odin Project</a></strong></em></p>
+        </div>
     </div>
-    <footer> 
-        <p><strong>Copyright: <em>terNoKi</em> ©</strong></p>
-        <p>Special Thank you to <em><strong>The Odin Project</strong></em></p>
-    </footer>
 </body>
 </html>
