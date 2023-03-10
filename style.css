@@ -1,3 +1,23 @@
+@media and (max-width: 400px){
+    .wrapper{
+        min-height: 100%;
+    }
+    .header{
+        min-width: 100%;
+    }
+    .site-info{
+        min-width: 100%;
+    }
+    .img-1{
+        width: fit-content;
+        height: fit-content;
+    }
+    .display{
+        min-width: 100%;
+    }
+    .footer{min-width: 100%;}
+    
+}
 
 *,
 *::before,
